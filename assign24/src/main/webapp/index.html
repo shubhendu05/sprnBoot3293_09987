@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<h1 align="center">Welcome To My Website</h1>
+	<div class="row">
+
+		<div class="column" style="background-color: #aaa;" align="center">
+			<h2 align="center">Click Here To LogIn Using MySql Database</h2>
+			<p>
+			<FORM ACTION="logininitsql">
+				<P align="center">
+					<INPUT TYPE="text" NAME="name" placeholder="Your Good Name">
+				</P>
+				<P align="center">
+					<INPUT TYPE="SUBMIT" VALUE="LogIn" NAME="request">
+				</P>
+			</FORM>
+		</div>
+
+		<div class="column" style="background-color: #bbb;">
+			<h2 align="center">Click here to Register Using MySql Database</h2>
+			<p>
+			<FORM ACTION="registerinitsql">
+				<P align="center">
+					<INPUT TYPE="text" NAME="name" placeholder="Your Good Name">
+				</P>
+				<P align="center">
+					<INPUT TYPE="SUBMIT" VALUE="Register" NAME="request">
+				</P>
+			</FORM>
+		</div>
+
+	</div>
+	<h1 align="center">Thanks For Visiting, Please Visit Again</h1>
+</body>
+</html>
